@@ -1,4 +1,4 @@
-FROM httpd:bullseye
+FROM httpd:2.4.62-alpine3.20
 ARG TARGETARCH
 RUN apt update \
     && apt install -y msmtp msmtp-mta imgp libcurl3-gnutls \
